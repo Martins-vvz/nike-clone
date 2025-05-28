@@ -1,0 +1,66 @@
+/* Estilos específicos para responsividade */
+@media (max-width: 768px) {
+  /* Ajustes para o cabeçalho em dispositivos móveis */
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  /* Ajustes para o carrossel em dispositivos móveis */
+  .hero-carousel-text {
+    bottom: 8px;
+    left: 8px;
+  }
+  
+  .hero-carousel-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-carousel-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Ajustes para grids de produtos e categorias */
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  /* Ajustes para o rodapé em dispositivos móveis */
+  .footer-columns {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Animações e transições suaves */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Melhorias de acessibilidade */
+:focus {
+  outline: 2px solid #0071e3;
+  outline-offset: 2px;
+}
+
+/* Melhorias de contraste */
+.high-contrast-text {
+  text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
